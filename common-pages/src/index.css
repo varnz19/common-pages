@@ -1,6 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
+}
+
+.auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #0b1f26, #020617 70%);
+}
+
+.auth-card {
+  width: 420px;
+  padding: 2.5rem;
+  border-radius: 20px;
+  background: #000000;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.04),
+    0 25px 70px rgba(0,0,0,0.9),
+    0 0 40px rgba(0,255,200,0.08);
+}
+
+.auth-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-social {
+  display: flex;
+  gap: 12px;
+}
+
+.auth-social button {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: #f1f5f9;
+  color: #111;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #1e293b;
+}
+
+.auth-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 14px;
+  padding-right: 44px;
+  border-radius: 12px;
+  border: none;
+  background: #5a0f1b;
+  color: #f1f5f9;
+  font-size: 14px;
+  outline: none;
+}
+
+.auth-input::placeholder {
+  color: #cbd5f5;
+}
+
+.auth-input:focus {
+  background: #66121f;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.08);
+}
+
+/* 🔥 CLEAN EYE BUTTON */
+.eye-btn {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #cbd5f5;
+  padding: 0;
+}
+
+.eye-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.auth-btn {
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  background: #3b5bcc;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-footer {
+  font-size: 14px;
+  color: #e2e8f0;
+  text-align: center;
+}
+
+.auth-link {
+  color: #60a5fa;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
 }
